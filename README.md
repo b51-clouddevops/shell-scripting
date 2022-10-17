@@ -6,7 +6,7 @@ In this repo you can find the scripts and the menthodology to learb bash / shell
 All the automations related to project can be see in the respective folders.
 
 
-# Git Commands that I've user 
+### Git Commands that I've user 
 
 ```
  git clone url       ( Will clone / download the whole repo )
@@ -19,10 +19,13 @@ All the automations related to project can be see in the respective folders.
 
 I've cloned the repository and have added few changed or filed and then I'd like tp push the changes back to GitHub repo.
 
-# Here is the flow to follow : 
+### Here is the flow to follow : 
 
+
+```
 1) Clone the repo using `git clone`
 2) Open the repo in VS Code / Editor, do the changes 
 3) git add . ; git commit -m "Msg telling what you've done" ; git push 
 4) Changes that you made are pushed 
 5) On your server, do a `git clone URL` for the first time and from second time to test, just do a `git pull`
+```
