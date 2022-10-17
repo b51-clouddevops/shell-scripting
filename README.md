@@ -28,4 +28,7 @@ I've cloned the repository and have added few changed or filed and then I'd like
 3) git add . ; git commit -m "Msg telling what you've done" ; git push 
 4) Changes that you made are pushed 
 5) On your server, do a `git clone URL` for the first time and from second time to test, just do a `git pull`
+
 ```
+
+### Project Automation will be done with
