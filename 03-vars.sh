@@ -7,7 +7,7 @@ b=20
 c=1000   # local variables
 
 # No concept of data types in shell-scripting.
-# Everything is considered sa string by default
+# Everything is considered sa string by default.
 
 echo $a 
 echo ${a} 
