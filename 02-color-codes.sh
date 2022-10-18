@@ -14,6 +14,8 @@
 # ```
 
 # Syntax : echo -e "\e[COLORCODEm  Your Text \e[0m"
+# Syntax for backGround  
+# echo -e "\e[COLORCODEm  Your Text \e[0m"
 
 echo -e "\e[33m I am printing Yellow \e[0m"
 echo -e "\e[43;31m I am printing Red \e[0m"
