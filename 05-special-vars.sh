@@ -6,6 +6,9 @@ echo -e "\e[32m Name of the executed script is:\e[0m $0"       # Prints the scri
 echo "First Argument from command line: $1"
 echo "Second Argument from command line: $2"
 
+echo $* 
+echo $
+
 # On command you can supply 9 variables 
 # Ex  
 #  sh abc.sh 10 20 30 40
