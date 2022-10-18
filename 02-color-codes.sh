@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 # Colors are of 2 types `FOREGROUND` & `BACKGROUND` Color.
 # Colors       Foreground          Background
 
