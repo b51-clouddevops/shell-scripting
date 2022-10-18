@@ -7,3 +7,5 @@ b=20
 
 # No concept of data types in shell-scripting.
 # Everything is considered sa string by default
+
+echo $a 
