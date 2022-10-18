@@ -7,7 +7,8 @@ echo "First Argument from command line: $1"
 echo "Second Argument from command line: $2"
 
 echo $* 
-echo $
+echo $@
+echo $#
 
 # On command you can supply 9 variables 
 # Ex  
