@@ -13,7 +13,6 @@ echo $a
 echo ${a} 
 echo "$a"
 echo "${b}"
-
 echo '${a}'
 
 echo $c
