@@ -2,8 +2,9 @@
 
 # Variable is something which holds the values dynamically.
 
+a=10 
 b=20 
-c=1000   # local variables
+# c=1000   # local variables
 
 # No concept of data types in shell-scripting.
 # Everything is considered sa string by default.
