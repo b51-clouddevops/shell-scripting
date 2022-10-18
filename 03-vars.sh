@@ -21,3 +21,6 @@ echo "prining the value of c : $c"
 # Here $ is a special character to print variables.
 
 # rm -rf /data/${OPT_VARIABLE}  # rm -rf /data/
+
+
+# Note: 
