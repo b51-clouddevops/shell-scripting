@@ -5,3 +5,5 @@
 a=10 
 
 b=20 
+
+# No concept of data types in shell-scripting.
