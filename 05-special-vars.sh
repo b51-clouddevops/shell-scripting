@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-### Special Variables in Linux are 
+### Special Variables in Linux are : 
