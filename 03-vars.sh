@@ -13,5 +13,7 @@ echo ${a}
 echo "$a"
 echo "${b}"
 
+echo '${a}'
+
 # Whenever you use single quotes on variable, the power of special characters will be taken down.
 # Here $ is a special character to print variables.
