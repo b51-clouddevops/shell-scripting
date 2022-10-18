@@ -23,4 +23,4 @@ echo "prining the value of c : $c"
 # rm -rf /data/${OPT_VARIABLE}  # rm -rf /data/
 
 
-# Note: local variables will have higher priority than export variables
+# Note: local variables will have higher priority than export variables ( environment variables )
