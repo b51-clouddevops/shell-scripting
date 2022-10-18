@@ -8,7 +8,7 @@ echo "Second Argument from command line: $2"
 
 echo $*   # Gives you all the arguments used in the script
 echo $@   # Gives you all the arguments used in the script
-echo $#
+echo $#   # Gves you the number of argume
 
 # On command you can supply 9 variables 
 # Ex  
