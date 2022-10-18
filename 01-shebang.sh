@@ -11,4 +11,4 @@ echo line3
 # /t  : cursor moves to tab space 
 # Whenever you want to use special characters, ensure you enbale them with -e option in echo
 
-echo "LINE1 /n LINE2"
+echo -e "LINE1 \n LINE2"
