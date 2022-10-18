@@ -2,7 +2,6 @@
 
 # Variable is something which holds the values dynamically.
 
-a=10 
 b=20 
 c=1000   # local variables
 
