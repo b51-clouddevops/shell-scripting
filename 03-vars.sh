@@ -13,4 +13,5 @@ echo ${a}
 echo "$a"
 echo "${b}"
 
-# Whenever you use single quotes on variable, the power of spec
+# Whenever you use single quotes on variable, the power of special characters will be taken down.
+# Here $ is a special character to print variables.
