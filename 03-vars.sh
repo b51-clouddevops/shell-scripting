@@ -4,7 +4,6 @@
 
 a=10 
 b=20 
-OPT_VARIABLE=test
 
 # No concept of data types in shell-scripting.
 # Everything is considered sa string by default
@@ -20,4 +19,4 @@ echo $c
 # Whenever you use single quotes on variable, the power of special characters will be taken down.
 # Here $ is a special character to print variables.
 
-rm -rf /data/${OPT_VARIABLE}  # rm -rf /data/
+# rm -rf /data/${OPT_VARIABLE}  # rm -rf /data/
