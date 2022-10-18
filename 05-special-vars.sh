@@ -2,8 +2,8 @@
 
 ### Special Variables in Linux are : $0 to $n , $* , $@ , $# , $$ 
 
-echo $0 #Name of the executed script is:\e[0m $0"       # Prints the script name that you're running
-echo "First Argument from command line: $1"
+echo $0   # Prints the script name that you're running
+echo $1"
 echo "Second Argument from command line: $2"
 
 echo $*   # Gives you all the arguments used in the script
