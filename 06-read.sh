@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-read 
+read 'Enter your name:' NAME 
