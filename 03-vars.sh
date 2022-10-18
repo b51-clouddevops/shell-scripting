@@ -21,4 +21,4 @@ echo $c
 # Whenever you use single quotes on variable, the power of special characters will be taken down.
 # Here $ is a special character to print variables.
 
-rm -rf /data/${OPT_VARIABLE}  # rm -rf 
+rm -rf /data/${OPT_VARIABLE}  # rm -rf /data/
