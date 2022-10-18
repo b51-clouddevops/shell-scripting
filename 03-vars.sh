@@ -3,6 +3,7 @@
 # Variable is something which holds the values dynamically.
 
 a=10 
+a=200
 b=20 
 c=1000   # local variables
 
@@ -23,4 +24,4 @@ echo "prining the value of c : $c"
 # rm -rf /data/${OPT_VARIABLE}  # rm -rf /data/
 
 
-# Note: 
+# Note: local variables
