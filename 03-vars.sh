@@ -10,4 +10,5 @@ b=20
 
 echo $a 
 echo ${a} 
-echo ""
+echo "$a"
+echo "${b}"
