@@ -14,7 +14,7 @@ echo "$a"
 echo "${b}"
 echo '${a}'
 
-echo "prining the value of c : $c
+echo "prining the value of c : $c"
 
 # Whenever you use single quotes on variable, the power of special characters will be taken down.
 # Here $ is a special character to print variables.
