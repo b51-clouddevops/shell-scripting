@@ -4,7 +4,7 @@
 
 echo $0   # Prints the script name that you're running
 echo $1   # First argument from the command line
-echo "Second Argument from command line: $2"
+echo $2   # Second argument from the command line
 
 echo $*   # Gives you all the arguments used in the script
 echo $@   # Gives you all the arguments used in the script
