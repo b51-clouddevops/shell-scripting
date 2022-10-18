@@ -9,3 +9,5 @@ b=20
 # Everything is considered sa string by default
 
 echo $a 
+echo ${a} 
+echo ""
