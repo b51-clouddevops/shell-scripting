@@ -8,6 +8,6 @@ done
 # Loops based on conditions use while loop 
 p=5 
 while [ $p -gt 0 ] ; do 
-    echo Run Number is  : $p 
+    echo Run Number is $p 
     p=$(($p-1))
 done 
