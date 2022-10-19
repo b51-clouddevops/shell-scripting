@@ -5,3 +5,5 @@
 for games in cricket volleyball soccer coco chess; do  
     echo Game Name is ${games}
 done 
+
+# Loops based on conditions use while loop 
