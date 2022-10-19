@@ -2,4 +2,4 @@
 
 # Loops based on inputs. for loop is the option 
 
-for games in cricket 
+for games in cricket volleball soccer coco chess
