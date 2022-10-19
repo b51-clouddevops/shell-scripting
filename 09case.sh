@@ -8,4 +8,8 @@
 # esac 
 
 
-case 
+case $var in 
+
+    start)
+
+esac 
