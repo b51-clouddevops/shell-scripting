@@ -1,8 +1,11 @@
 #!/bin/bash 
 
-case $var in 
+# case $var in 
 
-    opt1) commands ;; 
-    opt2) commands ;; 
+#     opt1) commands ;; 
+#     opt2) commands ;; 
 
-esac 
+# esac 
+
+
+case 
