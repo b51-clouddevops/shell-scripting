@@ -24,10 +24,10 @@ fi
 c=$1 
 
 if [ "$c" -eq "10" ] ; then 
-    echo "value of c is 10 "
+    echo "value of c is 10"
 
 elif [ "$c" -eq "20" ] ; then 
-    echo "value of c is 20 "
+    echo "value of c is 20"
 
 elif [ "$c" -eq "30" ] ; then 
     echo "value of c is 30 "
