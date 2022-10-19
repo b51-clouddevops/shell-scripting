@@ -14,7 +14,3 @@ done
 
 
 
-#!/bin/bash 
-a=10 
-b=$a 
-echo "Value b is $b"
