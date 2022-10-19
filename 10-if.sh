@@ -3,6 +3,6 @@
 a="abc" 
 
 if  [ "$a" == "abc" ]; then 
-    echo 
+    echo -e "\eBoth of the are equal \e[0m"
 
 fi 
