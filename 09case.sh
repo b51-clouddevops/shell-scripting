@@ -13,6 +13,8 @@ case $var in
     start) 
         echo "Startring XYZ Service" 
         ;; 
-    
+    stop)
+        echo "Stopping XYZ Service"
+        ;;
 
 esac 
