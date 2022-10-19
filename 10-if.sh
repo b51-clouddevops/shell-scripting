@@ -15,4 +15,5 @@ if  [ "$b" != "abc" ]; then
 fi 
 
 
-if [ ]
+if [ -z $b ] ; then 
+    echo ""
