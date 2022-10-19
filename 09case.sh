@@ -10,6 +10,7 @@
 
 case $var in 
 
-    start)
+    start) 
+        ech
 
 esac 
