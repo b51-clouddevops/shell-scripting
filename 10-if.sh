@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+# Demo on if & if-else 
+
 a="abcd" 
 
 if  [ "$a" == "abc" ]; then 
@@ -18,3 +20,5 @@ fi
 if [ -z $b ] ; then 
     echo "variable b is empty"
 fi  
+
+# Demo on else if 
