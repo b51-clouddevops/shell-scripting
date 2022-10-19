@@ -11,5 +11,5 @@ done
 p=5 
 while [ $p -gt 0 ] ; do 
     echo Run Number is  : $p 
-    i=$(($i-1))
+    i=$(($p-1))
 done 
