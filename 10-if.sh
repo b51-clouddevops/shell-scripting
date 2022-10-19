@@ -12,7 +12,7 @@ fi
 
 
 # Demo on not equals string operator
-if  [ "$a" != "abc" ]; then 
+if  [ "$b" != "abc" ]; then 
      echo -e "\e[31m Both of the are not equal \e[0m"
      exit 1
 fi 
