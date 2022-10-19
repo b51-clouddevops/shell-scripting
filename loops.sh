@@ -9,7 +9,7 @@ done
 # Loops based on conditions use while loop 
 
 p=5 
-while [  ] ; do 
+while [ $p -gt 0 ] ; do 
     echo Run Number is  : 
 
 done 
