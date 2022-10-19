@@ -2,8 +2,7 @@
 
 case $var in 
 
-    opt1) 
-
-
+    opt1) commands ;; 
+    opt2) commands ;; 
 
 esac 
