@@ -10,6 +10,7 @@ echo $*   # Gives you all the arguments used in the script
 echo $@   # Gives you all the arguments used in the script
 echo $#   # Gves you the number of arguments users
 echo $$   # Gives you the PID of the current process
+echo $?   # Gives you the exit code the previous command
 
 # On command you can supply 9 variables 
 # Ex  
