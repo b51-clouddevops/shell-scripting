@@ -9,3 +9,6 @@ else
      echo -e "\e[31m Both of the are not equal \e[0m"
      exit 1
 fi 
+
+
+
