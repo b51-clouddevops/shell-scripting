@@ -9,7 +9,7 @@ done
 # Loops based on conditions use while loop 
 
 p=5 
-while [ expression ] ; do 
-
+while [  ] ; do 
+    echo Run Number is  : 
 
 done 
