@@ -8,5 +8,5 @@ sample() {
 
 
 #Calling function sample
-sample 
+sample
 
