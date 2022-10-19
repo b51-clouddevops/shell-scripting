@@ -11,3 +11,9 @@ while [ $p -gt 0 ] ; do
     echo Run Number is $p 
     p=$(($p-1))
 done
+
+
+
+#!/bin/bash 
+a=10 
+b=$a 
