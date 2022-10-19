@@ -11,6 +11,8 @@
 case $var in 
 
     start) 
-        ech
+        echo "Startring XYZ Service" 
+        ;; 
+    
 
 esac 
