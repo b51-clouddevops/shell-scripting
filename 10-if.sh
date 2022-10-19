@@ -25,5 +25,8 @@ fi
 if [ "$c" -eq "10" ] ; then 
     echo "value of c is 10 "
 
+elif  
+
+
 
 fi 
