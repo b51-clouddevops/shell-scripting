@@ -14,6 +14,7 @@ stat() {
     echo "Load Average on the system is $(uptime | awk -F : '{print $NF}' | awk -F , '{print $1}')"
     echo "Number of logged in sessions is : $(who  |wc -l)"
     echo "Function stat is completed"
+    echo " . . . . Calling sample function . . . . ."
     
 }
 
