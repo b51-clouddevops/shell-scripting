@@ -16,6 +16,7 @@ case $var in
     stop)
         echo "Stopping XYZ Service"
         ;;
-    *)
+    *) 
+        echo "Valip Options are either start or stop"
 
 esac 
