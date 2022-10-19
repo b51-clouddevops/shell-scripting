@@ -12,5 +12,5 @@ sample
 
 stat() {
     echo "Load Average on the system is $(uptime | awk -F : '{print $NF}' | awk -F , '{print $1}')"
-    echo ""
+    echo "Number of logged in sessions is : $("
 }
