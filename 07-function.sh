@@ -15,7 +15,7 @@ stat() {
     echo "Number of logged in sessions is : $(who  |wc -l)"
     echo "Function stat is completed"
     echo " . . . . Calling sample function . . . . ."
-    sample 
+    sample
 }
 
 stat 
