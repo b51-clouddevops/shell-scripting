@@ -22,7 +22,7 @@ fi
 
 # Demo on else if 
 
-if [ $]
+if [ "$c" -eq 10 ]
 
 
 fi 
