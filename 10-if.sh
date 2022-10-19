@@ -22,7 +22,8 @@ fi
 
 # Demo on else if 
 
-if [ "$c" -eq 10 ]
+if [ "$c" -eq "10" ] ; then 
+    echo "value of c is 10 "
 
 
 fi 
