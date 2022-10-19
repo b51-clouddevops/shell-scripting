@@ -21,3 +21,8 @@ if [ -z $b ] ; then
 fi  
 
 # Demo on else if 
+
+if [ $]
+
+
+fi 
