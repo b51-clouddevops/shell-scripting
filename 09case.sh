@@ -1,6 +1,8 @@
 #!/bin/bash 
 
-case   
+case $var in 
+
+
 
 
 
