@@ -8,7 +8,8 @@
 # esac 
 
 
-case $var in 
+
+case $1 in 
 
     start) 
         echo "Startring XYZ Service" 
