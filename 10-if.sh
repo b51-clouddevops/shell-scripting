@@ -25,8 +25,10 @@ fi
 if [ "$c" -eq "10" ] ; then 
     echo "value of c is 10 "
 
-elif  
+elif [ "$c" -eq "20" ] ; then 
+    echo "value of c is 20 "
 
-
+elif [ "$c" -eq "20" ] ; then 
+    echo "value of c is 20 "
 
 fi 
