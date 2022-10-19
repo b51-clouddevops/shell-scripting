@@ -7,9 +7,9 @@
 
 # esac 
 
+ACTION=$1
 
-
-case $1 in 
+case $ACTION in 
 
     start) 
         echo "Startring XYZ Service" 
