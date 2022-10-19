@@ -18,4 +18,5 @@ stat() {
     sample
 }
 
+#calling stat function
 stat 
