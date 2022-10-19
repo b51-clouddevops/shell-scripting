@@ -2,7 +2,7 @@
 
 # Loops based on inputs. for loop is the option 
 
-for games in cricket volleyball soccer coco chess; do  
+for games in 10 20 30 40 50; do  
     echo Game Name is ${games}
 done 
 
