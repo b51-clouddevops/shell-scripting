@@ -21,7 +21,7 @@ if [ -z $b ] ; then
 fi  
 
 # Demo on else if 
-c=30 
+c=$1 
 
 if [ "$c" -eq "10" ] ; then 
     echo "value of c is 10 "
