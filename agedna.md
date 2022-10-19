@@ -38,23 +38,13 @@ Follwoing are the shell scripting topics which we discuss as a part of our proje
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Four types of commands in total :
 ```
 1. Binary ( /bin, /sbin )
 2. Alias 
 3. Shell Builtin Commands ( export is an example of shell build in command)
 4. Functions  
+
 ```
 Colors are of 2 types `FOREGROUND` & `BACKGROUND` Color.
 
