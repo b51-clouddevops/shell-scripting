@@ -2,4 +2,6 @@
 
 # Declaring a function 
 
-sample
+sample() {
+    echo 
+}
