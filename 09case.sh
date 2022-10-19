@@ -18,6 +18,6 @@ case $ACTION in
         echo "Stopping XYZ Service"
         ;;
     *) 
-        echo "Valip Options are either start or stop"
+        echo "Valid Options are either start or stop"
 
 esac 
