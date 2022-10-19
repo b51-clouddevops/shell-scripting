@@ -16,4 +16,5 @@ fi
 
 
 if [ -z $b ] ; then 
-    echo ""
+    echo "variable b is empty"
+fi  
