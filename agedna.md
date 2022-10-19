@@ -26,18 +26,6 @@ Follwoing are the shell scripting topics which we discuss as a part of our proje
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Four types of commands in total :
 ```
 1. Binary ( /bin, /sbin )
