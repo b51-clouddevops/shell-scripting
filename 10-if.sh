@@ -2,6 +2,7 @@
 
 a="abc" 
 
-if  [ "$a" == "" ]
+if  [ "$a" == "abc" ]; then 
+    echo 
 
 fi 
