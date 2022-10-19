@@ -9,4 +9,7 @@ done
 # Loops based on conditions use while loop 
 
 p=5 
-while 
+while [ expression ] ; do 
+
+
+done 
