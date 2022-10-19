@@ -16,5 +16,6 @@ case $var in
     stop)
         echo "Stopping XYZ Service"
         ;;
+    *)
 
 esac 
