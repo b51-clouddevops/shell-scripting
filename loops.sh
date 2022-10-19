@@ -6,7 +6,6 @@ for games in cricket volleyball soccer coco chess; do
 done 
 
 # Loops based on conditions use while loop 
-
 p=5 
 while [ $p -gt 0 ] ; do 
     echo Run Number is  : $p 
