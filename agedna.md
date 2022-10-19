@@ -126,10 +126,10 @@ NOTE: If the expression is false, then it will perform the conditions in else
     if [ expression1 ]; then
         command1
     
-    elif [expression2 ]; then
+    elif [ expression2 ]; then
         command2
 
-    elif  [expression3 ]; then
+    elif  [ expression3 ]; then
         command3
 
     else
