@@ -21,6 +21,7 @@ if [ -z $b ] ; then
 fi  
 
 # Demo on else if 
+c=30 
 
 if [ "$c" -eq "10" ] ; then 
     echo "value of c is 10 "
@@ -30,5 +31,8 @@ elif [ "$c" -eq "20" ] ; then
 
 elif [ "$c" -eq "30" ] ; then 
     echo "value of c is 30 "
+
+else 
+    echo "Value is not 10 or 20 or 30"
 
 fi 
