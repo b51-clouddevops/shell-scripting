@@ -20,6 +20,8 @@ sed -i -e 's/127.0.0.1/0.0.0.0/' mongod.conf
 stat $? 
 
 
+
+
 # What I am planning to have ?
 # 1) If any steps fails, I don't want to proceed further and want to break the script. 
 # 2) I want validation to happen first and then if it's a root or sudo user,then only I want to run. If not, I'd like to break the script.
