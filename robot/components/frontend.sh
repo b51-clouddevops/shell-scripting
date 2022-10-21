@@ -1,3 +1,4 @@
 #!/bin/bash 
 
-echo "I am frontend component"
+yum install nginx -y 
+systemctl enable nginx 
