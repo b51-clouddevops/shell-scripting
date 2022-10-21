@@ -12,6 +12,7 @@ fi
 echo "Installing Ngnix:"
 yum install nginx -y &>> /tmp/frontend.log
 
+echo "Downloading the component: "
 curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
 
 rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
