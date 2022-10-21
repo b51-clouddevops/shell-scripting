@@ -5,7 +5,7 @@ set -e
 USERID=$(id -u) 
 COMPONENT=mongodb
 
-source 
+source components/common.sh
 
 echo -n "Installing Ngnix:"
 yum install nginx -y &>> $LOGFILE
