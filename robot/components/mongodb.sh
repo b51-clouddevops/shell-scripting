@@ -29,7 +29,7 @@ stat $?
 
 echo -n "Injecting the schems:"
 cd /tmp 
-unzip -o  mongodb.zip  &>> $LOGFILE
+unzip -o  $COMPONENT.zip  &>> $LOGFILE
 cd mongodb-main 
 mongo < catalogue.js &>> $LOGFILE
 mongo < users.js &>> $LOGFILE
