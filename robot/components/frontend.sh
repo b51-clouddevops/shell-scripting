@@ -3,7 +3,7 @@
 # Verify the script is been executed as a root user or not.
 USERID=$(id -u) 
 
-if [ $USERID -] ; do
+if [ $USERID -ne 0]  ; then 
 
 fi 
 
