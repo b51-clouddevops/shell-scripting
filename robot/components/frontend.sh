@@ -37,9 +37,10 @@ mv frontend-main/* .
 mv static/* .
 rm -rf frontend-main README.md
 
-echo -n "Conifuring the reverse proxy file: "
+echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
+echo -n ""
 systemctl enable nginx &>> /tmp/frontend.log
 systemctl start nginx &>> /tmp/frontend.log
 
