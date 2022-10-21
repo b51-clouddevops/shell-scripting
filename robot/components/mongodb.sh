@@ -7,6 +7,9 @@ COMPONENT=mongodb
 
 source components/common.sh
 
+echo -n "Configuring the repo:"
+ curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/stans-robot-project/mongodb/main/mongo.repo
+
 echo -n "Installing Ngnix:"
 yum install nginx -y &>> $LOGFILE
 stat $?
