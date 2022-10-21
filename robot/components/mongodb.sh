@@ -23,7 +23,16 @@ echo -n "Strating MongoDB: "
 systemctl enable mongodb &>> $LOGFILE
 systemctl start mongodb &>> $LOGFILE
 
-echo -n "Downloading the $COMPONENT"
+echo -n "Downloading the $COMPONENT Schema:"
+curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip"
+
+# curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip"
+
+# cd /tmp
+# unzip mongodb.zip
+# cd mongodb-main
+# mongo < catalogue.js
+# mongo < users.js
 
 # What I am planning to have ?
 # 1) If any steps fails, I don't want to proceed further and want to break the script. 
