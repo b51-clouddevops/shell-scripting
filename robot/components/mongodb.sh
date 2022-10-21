@@ -21,7 +21,7 @@ stat $?
 
 echo -n "Strating MongoDB: "
 systemctl enable mongod &>> $LOGFILE
-systemctl restart mongod &>> $LOGFILE
+systemctl start mongod &>> $LOGFILE
 
 echo -n "Downloading the $COMPONENT Schema:"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip" &>> $LOGFILE
