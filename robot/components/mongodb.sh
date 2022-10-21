@@ -20,8 +20,8 @@ sed -i -e 's/127.0.0.1/0.0.0.0/' mongod.conf
 stat $? 
 
 echo -n "Strating MongoDB: "
-
-
+systemctl enable mongodb &>> $LOGFILE
+systemctl start mongodb &>> $LOGFILE
 
 # What I am planning to have ?
 # 1) If any steps fails, I don't want to proceed further and want to break the script. 
