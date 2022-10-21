@@ -24,7 +24,8 @@ systemctl enable mongodb &>> $LOGFILE
 systemctl start mongodb &>> $LOGFILE
 
 echo -n "Downloading the $COMPONENT Schema:"
-curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip"
+curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip" 
+stat $? 
 
 # curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip"
 
