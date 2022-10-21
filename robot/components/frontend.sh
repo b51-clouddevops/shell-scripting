@@ -4,7 +4,7 @@ set -e
 # Verify the script is been executed as a root user or not.
 USERID=$(id -u) 
 COMPONENT=frontend
-LOGFILE=/tmp/$COMPONENT.log
+LOGFILE=/
 
 if [ $USERID -ne 0 ]  ; then 
     echo -e "\e[31m You must run this script as a root user or with sudo privilege \e[0m"
@@ -20,7 +20,7 @@ stat() {
 }
 
 echo -n "Installing Ngnix:"
-yum install nginx -y &>> /tmp/$COMPONENT.log
+yum install nginx -y &>> $LOGFILE
 stat $?
 
 echo -n "Downloading the component: "
@@ -28,12 +28,12 @@ curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/$COMPONE
 stat $?
 
 echo -n "Performing Cleanup:"
-rm -rf /usr/share/nginx/html/*  &>> /tmp/$COMPONENT.log
+rm -rf /usr/share/nginx/html/*  &>> $LOGFILE
 stat $?
 
 cd /usr/share/nginx/html
 echo -n "Unzipping the $COMPONENT:"
-unzip /tmp/$COMPONENT.zip &>> /tmp/$COMPONENT.log
+unzip /tmp/$COMPONENT.zip &>> $LOGFILE
 stat $? 
 mv $COMPONENT-main/* .
 mv static/* .
@@ -43,8 +43,8 @@ echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
 echo -n "Starting Frontend Service:"
-systemctl enable nginx &>> /tmp/$COMPONENT.log
-systemctl start nginx &>> /tmp/$COMPONENT.log
+systemctl enable nginx &>> $LOGFILE
+systemctl start nginx &>> $LOGFILE
 stat $?
 
 
