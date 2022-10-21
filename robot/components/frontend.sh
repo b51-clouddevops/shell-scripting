@@ -17,4 +17,4 @@ systemctl start nginx
 
 
 What I am planning to have ?
-1) 
+1) If any steps fails, I don't want to proceed further.
