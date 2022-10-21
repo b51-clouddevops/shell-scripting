@@ -20,7 +20,7 @@ stat() {
 }
 
 echo -n "Installing Ngnix:"
-yum install asfdqwecqwrfw -y &>> $LOGFILE
+yum install nginx -y &>> $LOGFILE
 stat $?
 
 echo -n "Downloading the component: "
