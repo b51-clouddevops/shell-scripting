@@ -10,7 +10,8 @@ systemctl start nginx
 
 rm -rf /usr/share/nginx/html/* 
 cd /usr/share/nginx/html
-
+unzip /tmp/frontend.zip
+mv frontend-main/* .
 
 
 
