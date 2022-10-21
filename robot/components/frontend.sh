@@ -37,7 +37,7 @@ unzip /tmp/$COMPONENT.zip &>> $LOGFILE
 stat $? 
 mv $COMPONENT-main/* .
 mv static/* .
-rm -rf $COMPONENT-main README.md
+rm -rf $COMPONENT-main README.md &>> $LOGFILE
 
 echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
