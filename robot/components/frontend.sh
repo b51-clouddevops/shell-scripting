@@ -27,12 +27,12 @@ curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/$COMPONE
 stat $?
 
 echo -n "Performing Cleanup:"
-rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
+rm -rf /usr/share/nginx/html/*  &>> /tmp/$COMPONENT.log
 stat $?
 
 cd /usr/share/nginx/html
-echo -n "Unzipping the component:"
-unzip /tmp/frontend.zip &>> /tmp/frontend.log
+echo -n "Unzipping the $COMPONENT:"
+unzip /tmp/frontend.zip &>> /tmp/$COMPONENT.log
 stat $? 
 mv frontend-main/* .
 mv static/* .
