@@ -4,7 +4,7 @@ set -e
 # Verify the script is been executed as a root user or not.
 USERID=$(id -u) 
 COMPONENT=frontend
-LOGFILE=/
+LOGFILE=/tmp/$COMPONENT.abc
 
 if [ $USERID -ne 0 ]  ; then 
     echo -e "\e[31m You must run this script as a root user or with sudo privilege \e[0m"
