@@ -9,6 +9,7 @@ if [ $USERID -ne 0 ]  ; then
     exit 1
 fi 
 
+echo "Installing Ngnix:"
 yum install nginx -y &>> /tmp/frontend.log
 
 curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
