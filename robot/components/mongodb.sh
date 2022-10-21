@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-echo "I am cart component"
+echo "I am mongodb component"
