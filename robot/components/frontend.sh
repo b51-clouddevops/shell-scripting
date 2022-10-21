@@ -4,6 +4,7 @@ set -e
 # Verify the script is been executed as a root user or not.
 USERID=$(id -u) 
 COMPONENT=frontend
+LOGFILE=
 
 if [ $USERID -ne 0 ]  ; then 
     echo -e "\e[31m You must run this script as a root user or with sudo privilege \e[0m"
@@ -42,8 +43,8 @@ echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
 echo -n "Starting Frontend Service:"
-systemctl enable nginx &>> /tmp/frontend.log
-systemctl start nginx &>> /tmp/frontend.log
+systemctl enable nginx &>> /tmp/$COMPONENT.log
+systemctl start nginx &>> /tmp/$COMPONENT.log
 stat $?
 
 
