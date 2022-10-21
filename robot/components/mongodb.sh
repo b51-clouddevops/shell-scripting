@@ -30,6 +30,8 @@ stat $?
 echo -n "Injecting the schems:"
 cd /tmp 
 unzip mongodb.zip 
+cd mongodb-main 
+
 
 # curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip"
 
