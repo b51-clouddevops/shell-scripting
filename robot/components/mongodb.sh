@@ -12,7 +12,7 @@ curl -s -o /etc/yum.repos.d/${COMPONENT}.repo https://raw.githubusercontent.com/
 stat $? 
 
 echo -n "Installing ${COMPONENT}:"
-yum install nginx -y &>> $LOGFILE
+yum install mongodb -y &>> $LOGFILE
 stat $?
 
 
