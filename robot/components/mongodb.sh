@@ -9,8 +9,9 @@ source components/common.sh
 
 echo -n "Configuring the repo:"
 curl -s -o /etc/yum.repos.d/${COMPONENT}.repo https://raw.githubusercontent.com/stans-robot-project/${COMPONENT}/main/mongo.repo
+stat $? 
 
-echo -n "Installing Ngnix:"
+echo -n "Installing ${}:"
 yum install nginx -y &>> $LOGFILE
 stat $?
 
