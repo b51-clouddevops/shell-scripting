@@ -19,11 +19,11 @@ stat() {
 }
 
 echo -n "Installing Ngnix:"
-yum install nginx -y &>> /tmp/frontend.log
+yum install nginx -y &>> /tmp/$COMPONENT.log
 stat $?
 
 echo -n "Downloading the component: "
-curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
+curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
 stat $?
 
 echo -n "Performing Cleanup:"
