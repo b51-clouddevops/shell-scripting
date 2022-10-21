@@ -1,6 +1,7 @@
 #!/bin/bash 
 
-# Verify 
+# Verify the script is been executed as a root user or not.
+UID=$(id -u)
 
 yum install nginx -y 
 
