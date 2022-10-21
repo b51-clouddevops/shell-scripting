@@ -27,6 +27,12 @@ fi
 
 echo "Performing Cleanup"
 rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
+if [ $? -eq 0 ]; then 
+    echo -e "\e[32m Success \e[0m"
+else 
+    echo -e "\e[31m Failure \e[0m"
+fi 
+
 cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>> /tmp/frontend.log
 mv frontend-main/* .
