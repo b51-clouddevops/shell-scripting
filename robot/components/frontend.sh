@@ -4,7 +4,7 @@
 USERID=$(id -u) 
 
 if [ $USERID -ne 0]  ; then 
-    echo "You must run this script as a root user or with sudo privilege"
+    echo -e "\e[31m You must run this script as a root user or with sudo privilege \e[0m"
 fi 
 
 yum install nginx -y 
