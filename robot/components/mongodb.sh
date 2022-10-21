@@ -27,6 +27,8 @@ echo -n "Downloading the $COMPONENT Schema:"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip" 
 stat $? 
 
+echo -n ""
+
 # curl -s -L -o /tmp/mongodb.zip "https://github.com/stans-robot-project/mongodb/archive/main.zip"
 
 # cd /tmp
