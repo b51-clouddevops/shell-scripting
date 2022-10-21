@@ -6,6 +6,7 @@ USERID=$(id -u)
 COMPONENT=mongodb
 
 
+
 echo -n "Installing Ngnix:"
 yum install nginx -y &>> $LOGFILE
 stat $?
