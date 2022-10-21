@@ -30,8 +30,9 @@ rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
 stat $?
 
 cd /usr/share/nginx/html
-echo -n ""
+echo -n "Unzipping the component"
 unzip /tmp/frontend.zip &>> /tmp/frontend.log
+stat $? 
 mv frontend-main/* .
 mv static/* .
 rm -rf frontend-main README.md
