@@ -40,9 +40,10 @@ rm -rf frontend-main README.md
 echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
-echo -n ""
+echo -n "Starting Frontend Service:"
 systemctl enable nginx &>> /tmp/frontend.log
 systemctl start nginx &>> /tmp/frontend.log
+stat $?
 
 
 # What I am planning to have ?
