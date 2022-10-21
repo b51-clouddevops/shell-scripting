@@ -11,7 +11,9 @@ fi
 
 echo "Installing Ngnix:"
 yum install nginx -y &>> /tmp/frontend.log
-if [ $? -eq 0 ]
+if [ $? -eq 0 ]; then 
+    echo -e "[32m Success"
+fi 
 
 echo "Downloading the component: "
 curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
