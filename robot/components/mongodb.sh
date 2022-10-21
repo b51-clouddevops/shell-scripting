@@ -16,7 +16,7 @@ yum install mongodb-org -y &>> $LOGFILE
 stat $?
 
 echo -n "Updating the mongodb config:"
-sed -i -e 's/127.0.0.1/0.0.0.0/' mongodb.conf 
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongodb.conf 
 stat $? 
 
 echo -n "Strating MongoDB: "
