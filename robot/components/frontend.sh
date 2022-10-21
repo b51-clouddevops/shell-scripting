@@ -4,7 +4,7 @@
 USERID=$(id -u) 
 
 if [ $USERID -ne 0]  ; then 
-
+    echo "You must exectu"
 fi 
 
 yum install nginx -y 
