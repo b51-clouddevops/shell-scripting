@@ -15,6 +15,7 @@ yum install nginx -y &>> /tmp/frontend.log
 echo "Downloading the component: "
 curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
 
+echo "Performing Cleanup"
 rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
 cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>> /tmp/frontend.log
