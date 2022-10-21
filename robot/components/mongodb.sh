@@ -19,6 +19,7 @@ echo -n "Updating the mongodb config:"
 sed -i -e 's/127.0.0.1/0.0.0.0/' mongod.conf 
 stat $? 
 
+echo -n "Strating MongoDB: "
 
 
 
