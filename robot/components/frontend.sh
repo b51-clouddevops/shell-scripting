@@ -8,6 +8,9 @@ curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend
 systemctl enable nginx 
 systemctl start nginx 
 
+rm -rf /usr/share/nginx/html/* 
+cd /usr/share/nginx/html
+
 
 
 
