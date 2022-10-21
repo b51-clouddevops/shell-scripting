@@ -32,11 +32,11 @@ stat $?
 
 cd /usr/share/nginx/html
 echo -n "Unzipping the $COMPONENT:"
-unzip /tmp/frontend.zip &>> /tmp/$COMPONENT.log
+unzip /tmp/$COMPONENT.zip &>> /tmp/$COMPONENT.log
 stat $? 
-mv frontend-main/* .
+mv $COMPONENT-main/* .
 mv static/* .
-rm -rf frontend-main README.md
+rm -rf $COMPONENT-main README.md
 
 echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
