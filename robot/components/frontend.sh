@@ -27,8 +27,10 @@ stat $?
 
 echo -n "Performing Cleanup"
 rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
+stat $?
 
 cd /usr/share/nginx/html
+echo -n ""
 unzip /tmp/frontend.zip &>> /tmp/frontend.log
 mv frontend-main/* .
 mv static/* .
