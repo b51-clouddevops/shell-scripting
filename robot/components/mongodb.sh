@@ -3,7 +3,7 @@ set -e
 
 # Verify the script is been executed as a root user or not.
 USERID=$(id -u) 
-COMPONENT=frontend
+COMPONENT=mongodb
 LOGFILE=/tmp/$COMPONENT.log
 
 if [ $USERID -ne 0 ]  ; then 
