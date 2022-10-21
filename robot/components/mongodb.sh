@@ -15,6 +15,9 @@ echo -n "Installing ${COMPONENT}:"
 yum install mongodb-org -y &>> $LOGFILE
 stat $?
 
+echo -n "Updating the mongodb config:"
+sed -i -e 's/127.0.0.1/0.0.0.0/' mongod.conf 
+stat $? 
 
 
 # What I am planning to have ?
