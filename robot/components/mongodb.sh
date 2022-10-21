@@ -11,7 +11,7 @@ echo -n "Configuring the repo:"
 curl -s -o /etc/yum.repos.d/${COMPONENT}.repo https://raw.githubusercontent.com/stans-robot-project/${COMPONENT}/main/mongo.repo
 stat $? 
 
-echo -n "Installing ${}:"
+echo -n "Installing ${COMPONENT}:"
 yum install nginx -y &>> $LOGFILE
 stat $?
 
