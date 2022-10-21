@@ -15,3 +15,6 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf
 systemctl enable nginx 
 systemctl start nginx 
 
+
+What I am planning to have ?
+1) 
