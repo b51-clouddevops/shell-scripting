@@ -25,19 +25,19 @@ echo -n "Downloading the component: "
 curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
 stat $?
 
-echo -n "Performing Cleanup"
+echo -n "Performing Cleanup:"
 rm -rf /usr/share/nginx/html/*  &>> /tmp/frontend.log
 stat $?
 
 cd /usr/share/nginx/html
-echo -n "Unzipping the component"
+echo -n "Unzipping the component:"
 unzip /tmp/frontend.zip &>> /tmp/frontend.log
 stat $? 
 mv frontend-main/* .
 mv static/* .
 rm -rf frontend-main README.md
 
-echo -n "Conifuring the "
+echo -n "Conifuring the reverse proxy file: "
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
 systemctl enable nginx &>> /tmp/frontend.log
