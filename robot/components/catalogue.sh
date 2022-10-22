@@ -14,7 +14,7 @@ yum install nodejs -y &>> $LOGFILE
 stat $? 
 
 echo -n "Creating App User:"
-useradd 
+useradd roboshop 
 
 
 # # curl -sL https://rpm.nodesource.com/setup_lts.x | bash
