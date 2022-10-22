@@ -24,7 +24,8 @@ stat $?
 
 echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
 cd /home/$APPUSER/ 
-unzip /tmp/catalogue.zip 
+unzip -o /tmp/catalogue.zip  &>> $LOGFILE
+
 
 
 
