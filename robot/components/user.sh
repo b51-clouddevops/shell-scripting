@@ -44,7 +44,7 @@ chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT &&  chmod -R 775 /home/robo
 stat $?
 
 echo -n "Configuring $COMPONENT Service:"
-sed -i -e 's/MONGO_ENDPOINT/mongodb.robot.internal/' -e 's/MONGO_ENDPOINT/mongodb.robot.internal/' /home/roboshop/$COMPONENT/systemd.service
+sed -i -e 's/MONGO_ENDPOINT/mongodb.robot.internal/' -e 's/REDIS_ENDPOINT/redis.robot.internal/' /home/roboshop/$COMPONENT/systemd.service
 mv /home/$APPUSER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
 stat $? 
 
