@@ -14,8 +14,6 @@ yum install redis-6.2.7 -y  &>> $LOGFILE
 
 
 
-
-```sql
 # vim /etc/redis.conf
 # vim /etc/redis/redis.conf
 ```
