@@ -29,7 +29,7 @@ cd /home/$APPUSER/
 unzip -o /tmp/catalogue.zip  &>> $LOGFILE
 stat $? 
 
-echo -n "P"
+echo -n "Performing Clearnup:"
 rm -rf $COMPONENT
 mv $COMPONENT-main $COMPONENT
 stat $? 
