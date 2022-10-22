@@ -28,7 +28,8 @@ unzip -o /tmp/catalogue.zip  &>> $LOGFILE
 mv $COMPONENT-main $COMPONENT
 stat $? 
 
-echo 
+echo -n "Installing nodejs dependencies:"
+cd 
 
 
 
