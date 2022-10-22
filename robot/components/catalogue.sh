@@ -49,7 +49,8 @@ mv /home/$APPUSER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.serv
 stat $? 
 
 echo -n "Starting $COMPONENT Service:"
-systemctl daemon-reload 
+systemctl daemon-reload &>> $LOGFILE
+systemctl start $
 
 
 # 1. Update SystemD file with correct IP addresses
