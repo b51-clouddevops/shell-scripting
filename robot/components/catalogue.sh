@@ -15,11 +15,10 @@ yum install nodejs -y &>> $LOGFILE
 stat $? 
 
 id $APPUSER &>> $LOGFILE 
-if 
-echo -n "Creating App User:"
-useradd $APPUSER 
-stat $?
-
+if [ $?]
+    echo -n "Creating App User:"
+    useradd $APPUSER 
+    stat $?
 fi 
 
 echo -n "Downloading the $COMPONENT:"
