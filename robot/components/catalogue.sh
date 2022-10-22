@@ -1,3 +1,10 @@
 #!/bin/bash 
+set -e 
 
-echo "I am catalogue component"
+COMPONENT=frontend
+
+source components/common.sh
+
+echo -n "Installing Ngnix:"
+yum install nginx -y &>> $LOGFILE
+stat $?
