@@ -37,6 +37,7 @@ stat $?
 echo -n "Installing nodejs dependencies:"
 cd $COMPONENT 
 npm install  &>> $LOGFILE
+stat $?
 
 echo -n "Changing permissions to $APPUSER"
 chown $APPUSER:$APPUSER /home/roboshop/$COMPONENT 
