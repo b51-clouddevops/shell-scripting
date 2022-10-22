@@ -39,7 +39,7 @@ cd $COMPONENT
 npm install  &>> $LOGFILE
 
 echo -n "Changing permissions to $APPUSER"
-chown 
+chown $APPUSER:$APPUSER /home/
 
 
 
