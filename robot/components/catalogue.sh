@@ -18,10 +18,8 @@ echo -n "Creating App User:"
 useradd APPUSER 
 
 
-# # curl -sL https://rpm.nodesource.com/setup_lts.x | bash
-# # yum install nodejs -y
 
-# # useradd roboshop
+
 
 # $ curl -s -L -o /tmp/catalogue.zip "https://github.com/stans-robot-project/catalogue/archive/main.zip"
 # $ cd /home/roboshop
