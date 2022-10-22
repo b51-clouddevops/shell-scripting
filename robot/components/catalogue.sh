@@ -18,6 +18,7 @@ echo -n "Creating App User:"
 useradd $APPUSER 
 stat $?
 
+echo -n "Downloading the $COMPONENT:"
 
 
 
