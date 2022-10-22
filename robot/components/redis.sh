@@ -1,14 +1,11 @@
 #!/bin/bash 
 set -e 
 
-COMPONENT=frontend
+COMPONENT=redis
 
 source components/common.sh
 
-echo -n "Installing Ngnix:"
-yum install nginx -y &>> $LOGFILE
-stat $?
-
+echo -nm
 
 
 # curl -L https://raw.githubusercontent.com/stans-robot-project/redis/main/redis.repo -o /etc/yum.repos.d/redis.repo
