@@ -34,9 +34,11 @@ rm -rf $COMPONENT
 mv $COMPONENT-main $COMPONENT
 stat $? 
 
-# echo -n "Installing nodejs dependencies:"
-# cd $COMPONENT 
-# npm install  &>> $LOGFILE
+echo -n "Installing nodejs dependencies:"
+cd $COMPONENT 
+npm install  &>> $LOGFILE
+
+echo -n ""
 
 
 
