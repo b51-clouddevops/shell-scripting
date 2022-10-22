@@ -4,6 +4,7 @@ set -e
 COMPONENT=catalogue
 
 source components/common.sh
+APPUSER=roboshop
 
 echo -n "Configuring Node JS:"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash   &>> $LOGFILE
@@ -14,7 +15,7 @@ yum install nodejs -y &>> $LOGFILE
 stat $? 
 
 echo -n "Creating App User:"
-useradd roboshop 
+useradd APPUSER 
 
 
 # # curl -sL https://rpm.nodesource.com/setup_lts.x | bash
