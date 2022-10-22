@@ -43,7 +43,8 @@ echo -n "Changing permissions to $APPUSER"
 chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT 
 stat $?
 
-echo -n "Configuring Systemd "
+echo -n "Configuring $COMPONENT Service:"
+sed -e 's/MONGO_DNSNAME/mongodb.robot.internal/'
 
 
 # 1. Update SystemD file with correct IP addresses
