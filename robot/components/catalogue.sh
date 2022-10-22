@@ -20,8 +20,6 @@ if [ $? -ne 0 ]; then
     stat $?
 fi 
 
-sudo su - 
-
 echo -n "Downloading the $COMPONENT:"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/stans-robot-project/catalogue/archive/main.zip"
 stat $? 
