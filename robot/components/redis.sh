@@ -12,6 +12,7 @@ stat $?
 echo -n "Installing $COMPONENT:"
 yum install redis-6.2.7 -y  &>> $LOGFILE
 
+echo -n "Whitelisting redis to others:"
 
 
 # vim /etc/redis.conf
