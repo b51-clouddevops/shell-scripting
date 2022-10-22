@@ -48,7 +48,8 @@ sed -e 's/MONGO_DNSNAME/mongodb.robot.internal/' /home/roboshop/$COMPONENT/syste
 mv /home/$APPUSER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
 stat $? 
 
-echo -n "Starting $COMPONENT"
+echo -n "Starting $COMPONENT Service:"
+systemctl daemon-reload 
 
 
 # 1. Update SystemD file with correct IP addresses
