@@ -14,6 +14,7 @@ echo -n "Installing Nodejs: "
 yum install nodejs -y &>> $LOGFILE
 stat $? 
 
+id $APPUSER
 echo -n "Creating App User:"
 useradd $APPUSER 
 stat $?
