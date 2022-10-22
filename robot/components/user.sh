@@ -21,12 +21,12 @@ if [ $? -ne 0 ]; then
 fi 
 
 echo -n "Downloading the $COMPONENT:"
-curl -s -L -o /tmp/catalogue.zip "https://github.com/stans-robot-project/catalogue/archive/main.zip"
+curl -s -L -o /tmp/$COMPONENT.zip "https://github.com/stans-robot-project/catalogue/archive/main.zip"
 stat $? 
 
 echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
 cd /home/$APPUSER/ 
-unzip -o /tmp/catalogue.zip  &>> $LOGFILE
+unzip -o /tmp/.zip  &>> $LOGFILE
 stat $? 
 
 echo -n "Performing Clearnup:"
