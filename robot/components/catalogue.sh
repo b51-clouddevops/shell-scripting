@@ -53,7 +53,7 @@ systemctl daemon-reload &>> $LOGFILE
 systemctl start $COMPONENT &>> $LOGFILE
 stat $? 
 
-echo -n "\e[31m __________ $COMPONENT Installation Completed _________ \e[0m"
+echo -e "\e[31m __________ $COMPONENT Installation Completed _________ \e[0m"
 
 
 # 1. Update SystemD file with correct IP addresses
