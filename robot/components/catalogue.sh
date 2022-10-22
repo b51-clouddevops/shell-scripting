@@ -43,6 +43,7 @@ echo -n "Changing permissions to $APPUSER"
 chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT 
 stat $?
 
+echo -n ""
 
 
 # 1. Update SystemD file with correct IP addresses
