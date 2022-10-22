@@ -30,7 +30,7 @@ stat $?
 
 echo -n "Installing nodejs dependencies:"
 cd $COMPONENT 
-npm install 
+npm install  &>> $LOGFILE
 
 
 
