@@ -29,7 +29,8 @@ mv $COMPONENT-main $COMPONENT
 stat $? 
 
 echo -n "Installing nodejs dependencies:"
-cd 
+cd $COMPONENT 
+npm install 
 
 
 
