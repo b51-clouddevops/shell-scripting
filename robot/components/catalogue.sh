@@ -40,7 +40,7 @@ npm install  &>> $LOGFILE
 stat $?
 
 echo -n "Changing permissions to $APPUSER"
-chown $APPUSER:$APPUSER /home/roboshop/$COMPONENT 
+chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT 
 stat $?
 
 
