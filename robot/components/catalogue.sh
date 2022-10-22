@@ -50,7 +50,10 @@ stat $?
 
 echo -n "Starting $COMPONENT Service:"
 systemctl daemon-reload &>> $LOGFILE
-systemctl start $COMPONENT 
+systemctl start $COMPONENT &>> $LOGFILE
+stat $? 
+
+echo -n ""
 
 
 # 1. Update SystemD file with correct IP addresses
