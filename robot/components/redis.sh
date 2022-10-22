@@ -16,4 +16,5 @@ echo -n "Whitelisting redis to others:"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf 
 stat $? 
 
-echo -n "Starting #"
+echo -n "Starting $COMPONENT service:"
+
