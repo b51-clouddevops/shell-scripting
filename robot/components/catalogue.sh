@@ -38,7 +38,8 @@ echo -n "Installing nodejs dependencies:"
 cd $COMPONENT 
 npm install  &>> $LOGFILE
 
-echo -n ""
+echo -n "Changing permissions to $APPUSER"
+chown 
 
 
 
