@@ -1,7 +1,7 @@
 #!/bin/bash 
 set -e 
 
-COMPONENT=frontend
+COMPONENT=catalogue
 
 source components/common.sh
 
