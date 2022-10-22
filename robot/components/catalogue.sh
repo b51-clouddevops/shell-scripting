@@ -9,3 +9,8 @@ echo -n "Configuring Node JS:"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash   &>> $LOGFILE
 
 echo -n "Installing Nodejs: "
+
+
+# curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+# yum install nodejs -y
+
