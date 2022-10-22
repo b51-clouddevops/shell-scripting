@@ -13,6 +13,8 @@ echo -n "Installing $COMPONENT:"
 yum install redis-6.2.7 -y  &>> $LOGFILE
 
 echo -n "Whitelisting redis to others:"
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf 
+stat $? 
 
 
 # vim /etc/redis.conf
