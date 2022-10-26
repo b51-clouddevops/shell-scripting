@@ -34,6 +34,8 @@ NODEJS() {
 
     echo -n "Installing $COMPONENT Dependencies: "
     cd $COMPONENT 
+    npm install &>> $LOGFILE
+    stat $?
 
 }
 
