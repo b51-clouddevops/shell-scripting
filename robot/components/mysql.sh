@@ -17,5 +17,6 @@ systemctl enable mysqld && systemctl start mysqld
 stat $?
 
 echo -n "Changing the default password:"
+grep temp /var/log/mysqld.log
 
 
