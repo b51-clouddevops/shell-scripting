@@ -75,7 +75,7 @@ NPM_INSTALL() {
 
 CONFIGURE_SERVICE() {
     echo -n "Configuring $COMPONENT Service:"
-    sed -i -e 's/MONGO_DNSNAME/mongodb.robot.internal/' /home/roboshop/$COMPONENT/systemd.service
+    sed -i -e 's/MONGO_DNSNAME/mongodb.robot.internal/' -e -e 's/MONGO_ENDPOINT/mongodb.robot.internal/' -e 's/REDIS_ENDPOINT/redis.robot.internal/' /home/roboshop/$COMPONENT/systemd.service
     mv /home/$APPUSER/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
     stat $? 
 
