@@ -28,3 +28,10 @@ NODEJS() {
     stat $? 
 
 }
+
+id $APPUSER &>> $LOGFILE 
+if [ $? -ne 0 ]; then
+    echo -n "Creating App User:"
+    useradd $APPUSER &>> $LOGFILE
+    stat $?
+fi 
