@@ -7,12 +7,12 @@ APPUSER=roboshop
 
 NODEJS
 
-id $APPUSER &>> $LOGFILE 
-if [ $? -ne 0 ]; then
-    echo -n "Creating App User:"
-    useradd $APPUSER &>> $LOGFILE
-    stat $?
-fi 
+# id $APPUSER &>> $LOGFILE 
+# if [ $? -ne 0 ]; then
+#     echo -n "Creating App User:"
+#     useradd $APPUSER &>> $LOGFILE
+#     stat $?
+# fi 
 
 echo -n "Downloading the $COMPONENT:"
 curl -s -L -o /tmp/$COMPONENT.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
