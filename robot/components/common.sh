@@ -81,6 +81,6 @@ CONFIGURE_SERVICE() {
 
     echo -n "Starting $COMPONENT Service:"
     systemctl daemon-reload &>> $LOGFILE
-    systemctl start $COMPONENT &>> $LOGFILE
+    systemctl restart $COMPONENT &>> $LOGFILE
     stat $? 
 }
