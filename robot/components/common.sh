@@ -25,6 +25,10 @@ NODEJS() {
     echo -n "Installing Nodejs: "
     yum install nodejs -y &>> $LOGFILE
     stat $? 
+    
+    # Calling create_user function
+    CREATE_USER
+
 }
 
 CREATE_USER() {
