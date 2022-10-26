@@ -47,9 +47,6 @@ DOWNLOAD_AND_EXTRACT() {
 
     echo -n "Performing Cleanup:"
     rm -rf /home/$APPUSER/$COMPONENT
-    stat $? 
-
-    echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
     cd /home/$APPUSER/ 
     unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE && mv $COMPONENT-main $COMPONENT  &>> $LOGFILE 
     stat $? 
