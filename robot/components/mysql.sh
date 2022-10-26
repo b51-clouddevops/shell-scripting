@@ -16,4 +16,5 @@ echo -n "Starting $COMPONENT service: "
 systemctl enable mysqld && systemctl start mysqld
 
 && 
+|| 
 
