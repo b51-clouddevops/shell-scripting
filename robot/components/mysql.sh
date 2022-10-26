@@ -37,4 +37,5 @@ if [ $? -eq 0 ] ; then
 fi 
 
 echo -n "Downloading the $COMPONENT Schema:"
+cd /tmp 
 
