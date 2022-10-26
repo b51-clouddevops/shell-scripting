@@ -39,3 +39,5 @@ CREATE_USER() {
         stat $?
     fi
 } 
+
+DOWN
