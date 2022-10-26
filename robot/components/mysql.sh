@@ -44,7 +44,7 @@ stat $?
 
 echo -n "Injecting the $COMPONENT Schema:"
 cd /tmp/$COMPONENT-main/
-mysql -uroot -pRoboshop@1 < shipping.sql &>> $LOGFILE
+mysql -uroot -pRoboShop@1 < shipping.sql &>> $LOGFILE
 stat $? 
 
 echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
