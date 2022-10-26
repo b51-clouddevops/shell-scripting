@@ -51,7 +51,7 @@ DOWNLOAD_AND_EXTRACT() {
 
     echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
     cd /home/$APPUSER/ 
-    unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE && mv $COMPONENT-main $COMPONENT
+    unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE && mv $COMPONENT-main $COMPONENT  &>> $LOGFILE 
     stat $? 
 
 
