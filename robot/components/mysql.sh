@@ -39,7 +39,7 @@ fi
 echo -n "Downloading the $COMPONENT Schema:"
 cd /tmp 
 curl -s -L -o /tmp/mysql.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
-unzip -o $COMPONENT.zip
+unzip -o $COMPONENT.zip &>> $LOGFILE
 
 echo -n "Injecting the $COMPONENT Schema:"
 cd /tmp/$COMPONENT-main/
