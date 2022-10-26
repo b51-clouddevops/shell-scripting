@@ -43,4 +43,5 @@ unzip -o $COMPONENT.zip
 
 echo -n "Injecting the $COMPONENT Schema:"
 cd /tmp/$COMPONENT-main/
-mysql -uroot -pRoboshop@1 
+mysql -uroot -pRoboshop@1 < shipping.sql &>> $LOGFILE
+stat $? 
