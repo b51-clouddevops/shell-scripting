@@ -21,7 +21,6 @@ DEF_ROOT_PASSWORD=$(grep 'A temporary password' /var/log/mysqld.log | awk -F ' '
 
 # I only want to change the default password only for the first time.
 # How do I come to know whether the password is changed or not.
-
 echo show databases | mysql -uroot -p${1} &>> $LOGFILE 
 if [ $? -ne 0 ] ; then 
     echo -n "Reset Root Password"
