@@ -50,8 +50,5 @@ DOWNLOAD_AND_EXTRACT() {
     unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE
     stat $? 
 
-    echo -n "Performing Cleanup:"
-    rm -rf $COMPONENT
-    mv $COMPONENT-main $COMPONENT
-    stat $? 
+
 }
