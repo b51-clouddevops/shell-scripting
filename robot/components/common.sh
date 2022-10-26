@@ -33,7 +33,7 @@ NODEJS() {
     DOWNLOAD_AND_EXTRACT 
 
     echo -n "Installing $COMPONENT Dependencies: "
-    cd 
+    cd $COMPONENT 
 
 }
 
