@@ -18,7 +18,6 @@ stat() {
 
 
 NODEJS() {
-
     echo -n "Configuring Node JS:"
     curl -sL https://rpm.nodesource.com/setup_lts.x | bash   &>> $LOGFILE
     stat $? 
@@ -26,7 +25,6 @@ NODEJS() {
     echo -n "Installing Nodejs: "
     yum install nodejs -y &>> $LOGFILE
     stat $? 
-
 }
 
 CREATE_USER() {
