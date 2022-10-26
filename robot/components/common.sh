@@ -63,7 +63,6 @@ DOWNLOAD_AND_EXTRACT() {
     echo -n "Changing permissions to $APPUSER"
     chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT &&  chmod -R 775 /home/roboshop/$COMPONENT 
     stat $?
-
 }
 
 NPM_INSTALL() {
