@@ -5,13 +5,7 @@ COMPONENT=catalogue
 source components/common.sh
 APPUSER=roboshop
 
-# echo -n "Configuring Node JS:"
-# curl -sL https://rpm.nodesource.com/setup_lts.x | bash   &>> $LOGFILE
-# stat $? 
-
-# echo -n "Installing Nodejs: "
-# yum install nodejs -y &>> $LOGFILE
-# stat $? 
+NODEJS
 
 id $APPUSER &>> $LOGFILE 
 if [ $? -ne 0 ]; then
