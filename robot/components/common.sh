@@ -35,6 +35,9 @@ NODEJS() {
     # Performs npm install 
     NPM_INSTALL
 
+    # Configures Services
+    CONFIGURE_SERVICE
+
 }
 
 CREATE_USER() {
