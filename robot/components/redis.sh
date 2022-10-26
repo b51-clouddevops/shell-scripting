@@ -14,7 +14,7 @@ yum install redis-6.2.7 -y  &>> $LOGFILE
 stat $? 
 
 echo -n "Whitelisting redis to others:"
-sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf 
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis/redis.conf
 stat $? 
 
 echo -n "Starting $COMPONENT service:"
