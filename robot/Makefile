@@ -18,3 +18,6 @@ user:
 
 cart:
 	bash components/cart.sh
+
+mysql:
+	bash components/mysql.sh
