@@ -27,9 +27,9 @@ cd $COMPONENT
 npm install  &>> $LOGFILE
 stat $?
 
-echo -n "Changing permissions to $APPUSER"
-chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT &&  chmod -R 775 /home/roboshop/$COMPONENT 
-stat $?
+# echo -n "Changing permissions to $APPUSER"
+# chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT &&  chmod -R 775 /home/roboshop/$COMPONENT 
+# stat $?
 
 echo -n "Configuring $COMPONENT Service:"
 sed -i -e 's/MONGO_DNSNAME/mongodb.robot.internal/' /home/roboshop/$COMPONENT/systemd.service
