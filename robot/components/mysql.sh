@@ -42,4 +42,5 @@ curl -s -L -o /tmp/mysql.zip "https://github.com/stans-robot-project/$COMPONENT/
 unzip -o $COMPONENT.zip
 
 echo -n "Injecting the $COMPONENT Schema:"
-cd /tmp/$COMPONENT-main 
+cd /tmp/$COMPONENT-main/
+mysql -uroot -pRo
