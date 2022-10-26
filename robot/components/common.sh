@@ -31,7 +31,8 @@ NODEJS() {
 
     # Downloading the code
     DOWNLOAD_AND_EXTRACT 
-
+     
+    NPM_INSTALL
 
 }
 
@@ -57,6 +58,15 @@ DOWNLOAD_AND_EXTRACT() {
 
     echo -n "Changing permissions to $APPUSER"
     chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT &&  chmod -R 775 /home/roboshop/$COMPONENT 
+    stat $?
+
+}
+
+NPM_INSTALL() {
+
+    echo -n "Installing $COMPONENT Dependencies: "
+    cd $COMPONENT 
+    npm install &>> $LOGFILE
     stat $?
 
 }
