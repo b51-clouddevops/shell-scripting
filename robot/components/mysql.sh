@@ -29,7 +29,7 @@ if [ $? -ne 0 ] ; then
     stat $? 
 fi 
 
-echo show plugins | mysql -uroot -p${SQL_PASSWORD} | grep validate_password; &>> $LOGFILE 
+echo show plugins | mysql -uroot -p${1} | grep validate_password; &>> $LOGFILE 
 if [ $? -eq 0 ] ; then 
     echo -n "Uninstalling Password Validate Plugin: "
     echo "uninstall plugin validate_password;" | mysql  --connect-expired-password  -uroot -p${1} &>> $LOGFILE 
@@ -44,7 +44,7 @@ stat $?
 
 echo -n "Injecting the $COMPONENT Schema:"
 cd /tmp/$COMPONENT-main/
-mysql -uroot -p${SQL_PASSWORD} < shipping.sql &>> $LOGFILE
+mysql -uroot -p${1} < shipping.sql &>> $LOGFILE
 stat $? 
 
 echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
