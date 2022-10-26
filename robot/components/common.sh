@@ -46,7 +46,7 @@ DOWNLOAD_AND_EXTRACT() {
     stat $? 
 
     echo -n "Performing Cleanup:"
-    rm -rf $COMPONENT
+    rm -rf /home/$APPUSER/$COMPONENT
     mv $COMPONENT-main $COMPONENT
     stat $? 
 
