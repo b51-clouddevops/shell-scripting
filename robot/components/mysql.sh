@@ -12,5 +12,6 @@ echo -n "Installing $COMPONENT:"
 yum install mysql-community-server -y &>> $LOGFILE 
 stat $? 
 
-echo -n 
+echo -n "Starting $COMPONENT service: "
+
 
