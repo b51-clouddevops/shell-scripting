@@ -1,7 +1,5 @@
 #!/bin/bash 
 
-# Verify the script is been executed as a root user or not.
-
-COMPONENT=mongodb
+COMPONENT=mysql
 
 source components/common.sh
