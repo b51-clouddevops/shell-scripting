@@ -15,3 +15,16 @@ stat() {
         echo -e "\e[31m Failure \e[0m"
     fi 
 }
+
+
+NODEJS() {
+
+echo -n "Configuring Node JS:"
+curl -sL https://rpm.nodesource.com/setup_lts.x | bash   &>> $LOGFILE
+stat $? 
+
+echo -n "Installing Nodejs: "
+yum install nodejs -y &>> $LOGFILE
+stat $? 
+
+}
