@@ -45,6 +45,11 @@ DOWNLOAD_AND_EXTRACT() {
     curl -s -L -o /tmp/$COMPONENT.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
     stat $? 
 
+    echo -n "Performing Cleanup:"
+    rm -rf $COMPONENT
+    mv $COMPONENT-main $COMPONENT
+    stat $? 
+
     echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
     cd /home/$APPUSER/ 
     unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE
