@@ -51,5 +51,8 @@ DOWNLOAD_AND_EXTRACT() {
     unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE && mv $COMPONENT-main $COMPONENT  &>> $LOGFILE 
     stat $? 
 
+    echo -n "Changing permissions to $APPUSER"
+    chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT &&  chmod -R 775 /home/roboshop/$COMPONENT 
+    stat $?
 
 }
