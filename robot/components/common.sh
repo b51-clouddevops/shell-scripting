@@ -32,7 +32,7 @@ NODEJS() {
     # Downloading the code
     DOWNLOAD_AND_EXTRACT 
 
-    
+    echo -n "Installing $COMPONENT"
 
 }
 
