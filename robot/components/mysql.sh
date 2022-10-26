@@ -20,3 +20,7 @@ echo -n "Changing the default password:"
 DEF_ROOT_PASSWORD=$(grep 'A temporary password' /var/log/mysqld.log | awk -F ' ' '{print $NF}')
 
 
+
+MySQL 5.6.12: The --connect-expired-password option is added to the mysql client to enable password-change statement execution in batch mode for accounts with an expired password.
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyN3wP4ssw0rd';
