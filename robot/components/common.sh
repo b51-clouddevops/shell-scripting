@@ -29,9 +29,11 @@ NODEJS() {
 
 }
 
-id $APPUSER &>> $LOGFILE 
-if [ $? -ne 0 ]; then
-    echo -n "Creating App User:"
-    useradd $APPUSER &>> $LOGFILE
-    stat $?
-fi 
+CREATE_USER() {
+    id $APPUSER &>> $LOGFILE 
+    if [ $? -ne 0 ]; then
+        echo -n "Creating App User:"
+        useradd $APPUSER &>> $LOGFILE
+        stat $?
+    fi
+} 
