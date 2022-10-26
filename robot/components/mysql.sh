@@ -35,3 +35,6 @@ if [ $? -eq 0 ] ; then
     echo "uninstall plugin validate_password;" | mysql  --connect-expired-password  -uroot -pRoboShop@1 &>> $LOGFILE 
     stat $? 
 fi 
+
+echo -n "Downloading the $COMPONENT Schema:"
+
