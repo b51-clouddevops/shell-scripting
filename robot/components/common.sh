@@ -41,19 +41,17 @@ CREATE_USER() {
 } 
 
 DOWNLOAD_AND_EXTRACT() {
+    echo -n "Downloading the $COMPONENT:"
+    curl -s -L -o /tmp/$COMPONENT.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
+    stat $? 
 
-echo -n "Downloading the $COMPONENT:"
-curl -s -L -o /tmp/$COMPONENT.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
-stat $? 
+    echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
+    cd /home/$APPUSER/ 
+    unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE
+    stat $? 
 
-echo -n "Moving $COMPONENT Code to $APPUSER home directory:"
-cd /home/$APPUSER/ 
-unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE
-stat $? 
-
-echo -n "Performing Cleanup:"
-rm -rf $COMPONENT
-mv $COMPONENT-main $COMPONENT
-stat $? 
-
+    echo -n "Performing Cleanup:"
+    rm -rf $COMPONENT
+    mv $COMPONENT-main $COMPONENT
+    stat $? 
 }
