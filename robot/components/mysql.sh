@@ -16,7 +16,7 @@ echo -n "Starting $COMPONENT service: "
 systemctl enable mysqld && systemctl start mysqld
 stat $?
 
-# echo -n "Changing the default password:"
-# grep 'temporary passsword' /var/log/mysqld.log
+echo -n "Changing the default password:"
+grep 'A temporary password' /var/log/mysqld.log | awk -F ' ' '{print $NF}'
 
 
