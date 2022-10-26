@@ -31,7 +31,8 @@ NODEJS() {
 
     # Downloading the code
     DOWNLOAD_AND_EXTRACT 
-     
+
+    # Performs npm install 
     NPM_INSTALL
 
 }
