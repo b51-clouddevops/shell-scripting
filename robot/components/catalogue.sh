@@ -29,7 +29,7 @@ cd /home/$APPUSER/
 unzip -o /tmp/$COMPONENT.zip  &>> $LOGFILE
 stat $? 
 
-echo -n "Performing Clearnup:"
+echo -n "Performing Cleanup:"
 rm -rf $COMPONENT
 mv $COMPONENT-main $COMPONENT
 stat $? 
