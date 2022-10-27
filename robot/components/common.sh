@@ -89,6 +89,7 @@ MVN_INSTALL() {
     echo -n "Installing $COMPONENT Dependencies: "
     cd $COMPONENT 
     mvn clean package &>> $LOGFILE
+     mv target/$COMPONENT-1.0.jar $COMPONENT.jar
     stat $?
 }
 
