@@ -50,6 +50,9 @@ MAVEN() {
     # Downloading the code
     DOWNLOAD_AND_EXTRACT 
 
+    # Performs mvn install 
+    NPM_INSTALL
+
 }
 
 
