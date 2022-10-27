@@ -19,5 +19,6 @@ stat $?
 
 echo -n "Starting $COMPONENT service:"
 systemctl daemon-reload 
+systemctl enable redis 
 systemctl restart redis 
 stat $? 
