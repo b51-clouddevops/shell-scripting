@@ -17,7 +17,8 @@ systemctl enable rabbitmq-server  &>> $LOGFILE
 systemctl start rabbitmq-server  &>> $LOGFILE 
 stat $? 
 
-echo -n "Creating "
+echo -n "Creating Applicaiton user on $COMPONENT: "
+
 
 
 echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
