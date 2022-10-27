@@ -44,7 +44,9 @@ MAVEN() {
     yum install maven -y &>> $LOGFILE
     stat $? 
 
-    
+    # Calling create_user function
+    CREATE_USER
+
 }
 
 
