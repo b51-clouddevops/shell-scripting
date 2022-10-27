@@ -58,7 +58,7 @@ MAVEN() {
 }
 
 PYTHON() {
-    
+    echo -n ""
 }
 
 
