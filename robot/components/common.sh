@@ -85,6 +85,13 @@ NPM_INSTALL() {
     stat $?
 }
 
+MVN_INSTALL() {
+    echo -n "Installing $COMPONENT Dependencies: "
+    cd $COMPONENT 
+    npm install &>> $LOGFILE
+    stat $?
+}
+
 CONFIGURE_SERVICE() {
     echo -n "Configuring $COMPONENT Service:"
     sed -i  -e 's/REDIS_ENDPOINT/redis.robot.internal/' -e 's/CATALOGUE_ENDPOINT/catalogue.robot.internal/' -e 's/MONGO_DNSNAME/mongodb.robot.internal/' -e 's/MONGO_ENDPOINT/mongodb.robot.internal/' -e 's/REDIS_ENDPOINT/redis.robot.internal/' /home/roboshop/$COMPONENT/systemd.service
