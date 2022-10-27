@@ -24,6 +24,8 @@ if [ $? -ne 0 ] ; then
     stat $? 
 fi 
 
+
+echo -n ""
 rabbitmqctl set_user_tags roboshop administrator
 rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
 
