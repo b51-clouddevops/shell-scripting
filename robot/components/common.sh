@@ -88,7 +88,7 @@ NPM_INSTALL() {
 MVN_INSTALL() {
     echo -n "Installing $COMPONENT Dependencies: "
     cd $COMPONENT 
-    npm install &>> $LOGFILE
+    mvn clean package &>> $LOGFILE
     stat $?
 }
 
