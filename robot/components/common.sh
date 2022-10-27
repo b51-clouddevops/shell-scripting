@@ -57,7 +57,9 @@ MAVEN() {
     CONFIGURE_SERVICE
 }
 
-PYTHON
+PYTHON() {
+    
+}
 
 
 CREATE_USER() {
