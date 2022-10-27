@@ -4,8 +4,7 @@ COMPONENT=mysql
 
 source components/common.sh
 
-read -p 'Enter MySQL:' NAME 
-echo -e "Name of the executed user is $NAME"
+read -p 'Enter MySQL Password you wish to configure:' MYSQL_PWD 
 
 echo -n "Configuring the $COMPONENT Repo:"
 curl -s -L -o /etc/yum.repos.d/mysql.repo https://raw.githubusercontent.com/stans-robot-project/mysql/main/mysql.repo &>> $LOGFILE 
