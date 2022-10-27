@@ -62,7 +62,8 @@ PYTHON() {
     yum install python36 gcc python3-devel -y &>> $LOGFILE
     stat $? 
 
-    
+    # Calling create_user function
+    CREATE_USER    
 
 }
 
