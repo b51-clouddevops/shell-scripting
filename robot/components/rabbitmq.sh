@@ -28,6 +28,7 @@ fi
 echo -n "Adding Permissions to $APPUSER :"
 rabbitmqctl set_user_tags roboshop administrator
 rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
+stat $?
 
 
 echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
