@@ -37,8 +37,10 @@ NODEJS() {
 
     # Configures Services
     CONFIGURE_SERVICE
-
 }
+
+MAVEN()
+
 
 CREATE_USER() {
     id $APPUSER &>> $LOGFILE 
