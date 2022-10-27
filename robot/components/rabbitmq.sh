@@ -25,7 +25,7 @@ if [ $? -ne 0 ] ; then
 fi 
 
 
-echo -n ""
+echo -n "Adding Permissions to $APPUSER :"
 rabbitmqctl set_user_tags roboshop administrator
 rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
 
