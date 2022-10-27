@@ -71,7 +71,7 @@ PYTHON() {
     USERID=$(id -u roboshop)
     GROUPID=$(id -g roboshop)
 
-    echo -n "Updating the "
+    echo -n "Updating the uid and gid with $APPUSER"
 
 }
 
