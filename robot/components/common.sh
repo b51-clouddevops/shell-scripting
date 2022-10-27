@@ -71,7 +71,8 @@ PYTHON() {
     USERID=$(id -u roboshop)
     GROUPID=$(id -g roboshop)
 
-    echo -n "Updating the uid and gid with $APPUSER"
+    echo -n "Updating the uid and gid with $APPUSER in $PAYMENT.ini : "
+    sed -i -e 
 
 }
 
