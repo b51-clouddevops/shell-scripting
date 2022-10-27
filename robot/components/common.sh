@@ -69,6 +69,7 @@ PYTHON() {
     DOWNLOAD_AND_EXTRACT 
 
     USERID=$(id -u roboshop)
+    GROUPID=$(id -g roboshop)
 
 }
 
