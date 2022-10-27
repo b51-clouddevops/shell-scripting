@@ -51,7 +51,7 @@ MAVEN() {
     DOWNLOAD_AND_EXTRACT 
 
     # Performs mvn install 
-    NPM_INSTALL
+    MVN_INSTALL
 
 }
 
