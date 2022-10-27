@@ -1,7 +1,7 @@
 #!/bin/bash 
 
-# Verify the script is been executed as a root user or not.
-
-COMPONENT=mongodb
-
+COMPONENT=rabbitmq
 source components/common.sh
+
+
+echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
