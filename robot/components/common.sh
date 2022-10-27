@@ -53,6 +53,9 @@ MAVEN() {
     # Performs mvn install 
     MVN_INSTALL
 
+    # Configures Services
+    CONFIGURE_SERVICE
+
 }
 
 
