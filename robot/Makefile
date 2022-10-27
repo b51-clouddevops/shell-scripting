@@ -26,4 +26,4 @@ rabbitmq:
 	bash components/rabbitmq.sh
 
 payment:
-	bash components/rabbitmq.sh
+	bash components/payment.sh
