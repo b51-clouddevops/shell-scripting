@@ -10,6 +10,8 @@ stat $?
 
 echo -n "Installing $COMPONENT : "
 yum install rabbitmq-server -y &>> $LOGFILE 
+stat $?
+
 
 
 
