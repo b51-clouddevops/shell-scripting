@@ -65,6 +65,11 @@ PYTHON() {
     # Calling create_user function
     CREATE_USER    
 
+    # Downloading the code
+    DOWNLOAD_AND_EXTRACT 
+
+
+
 }
 
 
