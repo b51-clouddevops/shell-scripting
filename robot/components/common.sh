@@ -39,7 +39,9 @@ NODEJS() {
     CONFIGURE_SERVICE
 }
 
-MAVEN()
+MAVEN() {
+    echo -n "Installing Maven:"
+}
 
 
 CREATE_USER() {
