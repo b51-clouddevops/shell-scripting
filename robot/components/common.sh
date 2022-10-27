@@ -41,6 +41,7 @@ NODEJS() {
 
 MAVEN() {
     echo -n "Installing Maven:"
+    yum install maven 
 }
 
 
