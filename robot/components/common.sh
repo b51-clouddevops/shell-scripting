@@ -72,7 +72,7 @@ PYTHON() {
     GROUPID=$(id -g roboshop)
 
     echo -n "Updating the uid and gid with $APPUSER in $PAYMENT.ini : "
-    sed -i -e "/^uid/ c uid=$USERID"  -e "/^gid/ c gid=$GROUPID" $COMPONENT.ini 
+    sed -i -e "/^uid/ c uid=$USERID"  -e "/^gid/ c gid=$GROUPID" /home/$/$COMPONENT.ini 
     stat $?
 
     # Configures Services
