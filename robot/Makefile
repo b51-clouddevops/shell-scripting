@@ -23,4 +23,4 @@ shipping:
 	bash components/shipping.sh
 
 rabbitmq:
-	bash components/rabb.sh
+	bash components/rabbitmq.sh
