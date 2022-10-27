@@ -4,7 +4,7 @@ COMPONENT=mysql
 
 source components/common.sh
 
-read -p 'Enter your name:' NAME 
+read -p 'Enter MySQL:' NAME 
 echo -e "Name of the executed user is $NAME"
 
 echo -n "Configuring the $COMPONENT Repo:"
