@@ -68,6 +68,8 @@ PYTHON() {
     # Downloading the code
     DOWNLOAD_AND_EXTRACT 
 
+    USERID=$(id -u roboshop)
+
 }
 
 
