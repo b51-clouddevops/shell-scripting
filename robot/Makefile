@@ -21,3 +21,6 @@ mysql:
 
 shipping:
 	bash components/shipping.sh
+
+rabbitmq:
+	bash components/rabb.sh
