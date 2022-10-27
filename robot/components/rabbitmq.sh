@@ -17,6 +17,7 @@ systemctl enable rabbitmq-server  &>> $LOGFILE
 systemctl start rabbitmq-server  &>> $LOGFILE 
 stat $? 
 
+echo -n 
 
 
 echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
