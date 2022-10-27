@@ -12,7 +12,7 @@ echo -n "Installing $COMPONENT : "
 yum install rabbitmq-server -y &>> $LOGFILE 
 stat $?
 
-
+echo -n "Starting RabbitMQ:"
 
 
 echo -e "\e[32m __________ $COMPONENT Installation Completed _________ \e[0m"
