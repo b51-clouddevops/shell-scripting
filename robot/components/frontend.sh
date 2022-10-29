@@ -29,7 +29,8 @@ echo -n "Conifuring the reverse proxy file:"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 stat $?
 
-echo -n ""
+echo -n "Configuring Reverse Proxy : "
+sed -e "/user/s/localhost/user.robot.internal/" proxy.conf
 
 echo -n "Starting Frontend Service:"
 systemctl enable nginx &>> $LOGFILE
