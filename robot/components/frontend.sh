@@ -32,7 +32,7 @@ stat $?
 echo -n "Configuring Reverse Proxy : "
 sed -e "/user/s/localhost/user.robot.internal/"  /etc/nginx/default.d/roboshop.conf 
 
-for component in cataloue ; do
+for component in catalogue cart user shipping payment; do
 echo -n "Starting Frontend Service:"
 systemctl enable nginx &>> $LOGFILE
 systemctl start nginx &>> $LOGFILE
