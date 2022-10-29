@@ -31,7 +31,7 @@ stat $?
 
 for component in catalogue cart user shipping payment; do
     echo -n "Configuring Reverse Proxy : "
-    sed -e "/$component/s/localhost/user.robot.internal/"  /etc/nginx/default.d/roboshop.conf 
+    sed -e "/$component/s/localhost/$component.robot.internal/"  /etc/nginx/default.d/roboshop.conf 
     stat $?
 done
 
