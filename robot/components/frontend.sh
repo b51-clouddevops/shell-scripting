@@ -35,7 +35,6 @@ for component in catalogue cart user shipping payment; do
     stat $?
 done
 
-
 echo -n "Starting Frontend Service:"
 systemctl enable nginx &>> $LOGFILE
 systemctl start nginx &>> $LOGFILE
