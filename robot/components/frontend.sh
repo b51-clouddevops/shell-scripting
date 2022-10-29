@@ -37,6 +37,7 @@ done
 
 echo -n "Starting Frontend Service:"
 systemctl enable nginx &>> $LOGFILE
+systemctl daemon-reload &>> $LOGFILE
 systemctl restart nginx &>> $LOGFILE
 stat $?
 
