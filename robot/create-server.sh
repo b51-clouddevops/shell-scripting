@@ -14,10 +14,11 @@ echo "AMI ID Used to launch instance is : $AMI_ID"
 echo "SG ID Used to launch instance is : $SGID"
 echo $COMPONENT
 
-create-server
+create-server() {
 PRIVATE_IP=$(aws ec2 run-instances --image-id $AMI_ID --instance-type t2.micro --security-group-ids $SGID  --instance-market-options "MarketType=spot, SpotOptions={SpotInstanceType=persistent,InstanceInterruptionBehavior=stop}"  --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]"| jq '.Instances[].PrivateIpAddress' | sed -e 's/"//g')
 
 sed -e "s/IPADDRESS/${PRIVATE_IP}/" -e "s/COMPONENT/$COMPONENT/" route53.json > /tmp/dns.json 
 
 echo -n "Creating the DNS Record ********"
 aws route53 change-resource-record-sets --hosted-zone-id  --change-batch file:///tmp/dns.json | jq 
+}
