@@ -7,3 +7,6 @@ SGID="$(aws ec2 describe-security-groups   --filters Name=group-name,Values=b51-
 echo "AMI ID Used to launch instance is : $AMI_ID"
 echo "SG ID Used to launch instance is : $SGID"
 aws ec2 run-instances --image-id $AMI_ID --instance-type t2.micro --security-group-ids $SGID --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}]"| jq 
+
+Error parsing parameter '--tag-specifications': Expected: ',', received: ']' for input:
+ResourceType=instance,Tags=[{Key=Name,Value=}]
