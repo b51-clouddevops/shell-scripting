@@ -29,5 +29,5 @@ if [ "$1" == "all"  ]; then
         create-server()
     done 
 else 
-     if [ -z "$1" ]; then 
+     create-server() 
 fi 
