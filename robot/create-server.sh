@@ -24,5 +24,6 @@ create-server() {
 }
 
 for component in frontend catalogue cart user shipping payment mongodb mysql rabbitmq redis; dp 
-    
+    C
+    create-server()
 do 
