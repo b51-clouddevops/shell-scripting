@@ -23,7 +23,7 @@ create-server() {
     aws route53 change-resource-record-sets --hosted-zone-id  --change-batch file:///tmp/dns.json | jq 
 }
 
-if [ "$1" == "all"  ]; then 
+if [ "$1" == "all" ]; then 
     for component in frontend catalogue cart user shipping payment mongodb mysql rabbitmq redis; do 
         COMPONENT=$component
         create-server()
