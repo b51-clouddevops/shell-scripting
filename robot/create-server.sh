@@ -23,4 +23,4 @@ create-server() {
     aws route53 change-resource-record-sets --hosted-zone-id  --change-batch file:///tmp/dns.json | jq 
 }
 
-for component in frontend catalogue cart user shipping payment 
+for component in frontend catalogue cart user shipping payment mongodb mysql rabbitmq redis
