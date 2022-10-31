@@ -23,4 +23,4 @@ create-server() {
     aws route53 change-resource-record-sets --hosted-zone-id  --change-batch file:///tmp/dns.json | jq 
 }
 
-for component in 
+for component in catalogue mongodb 
