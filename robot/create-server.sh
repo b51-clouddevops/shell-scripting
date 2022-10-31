@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 if [ -z "$1" ]; then 
-    echo -e "\e"    
+    echo -e "\e[31m "    
 fi 
 
 COMPONENT=$1
