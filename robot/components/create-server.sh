@@ -1,7 +1,6 @@
 #!/bin/bash 
 
-AMI_ID=
+AMI_ID="ami-00ff427d936335825"
 
 
-DevOps-LabImage-CentOS7
-ami-00ff427d936335825
+# DevOps-LabImage-CentOS7
