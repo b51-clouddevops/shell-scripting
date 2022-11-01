@@ -80,9 +80,7 @@ PYTHON() {
 
     # Configures Services
     CONFIGURE_SERVICE
-
 }
-
 
 CREATE_USER() {
     id $APPUSER &>> $LOGFILE 
