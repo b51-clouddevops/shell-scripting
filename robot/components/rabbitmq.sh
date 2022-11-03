@@ -20,7 +20,7 @@ stat $?
 rabbitmqctl list_users | grep roboshop  &>> $LOGFILE
 if [ $? -ne 0 ] ; then
     echo -n "Creating Applicaiton user on $COMPONENT: "
-    rabbitmqctl add_user roboshop roboshop123 &>> $LOGFILE 
+    rabbitmqctl add_user roboshop cd &>> $LOGFILE 
     stat $? 
 fi 
 
