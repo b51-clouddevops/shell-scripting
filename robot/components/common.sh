@@ -19,7 +19,7 @@ stat() {
 
 NODEJS() {
     echo -n "Configuring Node JS:"
-    curl -sL https://rpm.nodesource.com/setup_lts.x | bash   &>> $LOGFILE
+    curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -   &>> $LOGFILE
     stat $? 
 
     echo -n "Installing Nodejs: "
